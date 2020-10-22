@@ -1,0 +1,310 @@
+:root{
+    --background: #f5f5f5;
+    --font: #222222;
+    --font2: #f5f5f5;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 16px;
+    background-color: var(--background);
+    font-family: 'Happy Monkey', cursive;
+    color: var(--font);
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.latar{
+    height: 100vh;
+    background-image: url(../images/banner.png);
+    background-size: cover;
+}
+
+/* header */
+header{
+    height: 100%;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+
+header nav ul li .logo{
+    color: var(--font2);
+    font-family: 'Gochi Hand', cursive;
+    font-size: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header nav ul li .resume{
+    color: var(--font2);
+    text-decoration: none;
+    border: solid 1px var(--font2);
+    border-radius: 8px;
+    padding: 10px 30px;
+    transition: .5s ease;
+}
+
+header nav ul li .resume:hover{
+    color: var(--font);
+    background: var(--background);
+    text-decoration: none;
+    border: solid 1px var(--font2);
+    border-radius: 8px;
+}
+
+/* hero */
+.text-banner{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+.text-banner .first-text{
+    font-size: 40px;
+    color: var(--font2);
+}
+
+.text-banner .second-text{
+    font-size: 20px;
+    margin-top: 10px;
+    color: var(--font2);
+}
+
+.text-banner .work-btn{
+    color: var(--font2);
+    border: solid 1px var(--font2);
+    text-decoration: none;
+    padding: 10px 35px;
+    display: inline-block;
+    border-radius: 8px;
+    transition: .5s ease;
+    margin-top: 15px;
+}
+
+.text-banner .work-btn:hover{
+    color: var(--font);
+    background: var(--font2);
+}
+
+
+/* about me */
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-aboutme{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+/* skills */
+
+.title-skills{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+/* experience */
+.experience{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    align-items: center;
+    justify-content: space-around;
+}
+.experience .pertama{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.experience .kedua{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.experience .ketiga{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.experience .title{
+    font-size: 40px;
+}
+.experience .jadwal{
+    color: #777777;
+}
+.experience .perusahaan{
+    color: #000000;
+    font-weight: 800;
+}
+.experience .jabatan{
+    color: var(--font);
+}
+.experience .deskripsi{
+    color: var(--font);
+}
+.experience .linkedins{
+    color: #548EFF;
+    text-decoration: none;
+}
+
+/* project */
+#project{
+    padding: 30px;
+}
+.title p{
+    font-size: 40px;
+    text-align: center;
+    margin: 40px 0 80px;
+}
+.project{
+    text-align: center;
+}
+.project .title{
+    font-weight: 900;
+    color: #000000;
+}
+.project .desc{
+    margin: 5px 0 40px;
+}
+
+/* contact and footer */
+.containers{
+    width: 100%;
+    margin: 0 auto;
+}
+.footer{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.contact{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    height: 50%;
+    background: #222222;
+    width: 100%;
+    color: var(--font2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.social{
+    margin-bottom: 50px;
+}
+footer a{
+    color: var(--font2);
+    text-decoration: none;
+    font-size: 50px;
+    margin:  20px;
+    transition: .6s ease;
+}
+footer a:hover{
+    opacity: 0.6;
+}
+.links{
+    font-size: 16px;
+    color: #548EFF;
+}
+
+.footer .title{
+    font-size: 40px;
+}
+
+.footer .desc{
+    font-size: 25px;
+    margin: 10px 0 30px;
+}
+.footer .email-btn{
+    color: var(--font);
+    text-decoration: none;
+    border: solid 1px var(--font);
+    padding: 10px 40px;
+    display: inline-block;
+    border-radius: 8px;
+    transition: .5s ease;
+}
+.footer .email-btn:hover{
+    color: var(--font2);
+    background: var(--font);
+}
+
+@media only screen and (max-width: 800px) {
+    body{
+        text-align: center;
+    }
+    .latar{
+        background-image: linear-gradient(#222, #000);
+    }
+    img{
+        width: 100%;
+    }
+    section{
+        height: 1000px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .skill-row{
+        flex-direction: column-reverse;
+    }
+    .skill-row .title-skills{
+        margin-top: 20px;
+    }
+    .experience{
+        height: 900px;
+    }
+    .footer{
+        height: 1000px;
+    }
+    footer a{
+        font-size: 25px;
+        margin: 10px;
+    }
+  }
